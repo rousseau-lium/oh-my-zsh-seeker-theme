@@ -40,7 +40,7 @@ function _docker_prompt_info {
     fi
 }
 
-PROMPT='╭ %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%n@%M:%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(_virtualenv_prompt_info)$(_pyenv_prompt_info)$(_docker_prompt_info)$(_git_prompt_info)$(_hg_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
+PROMPT='╭ %{$fg[red]%}➜ %{$fg[cyan]%}%n %{$fg[white]%}@ %{$fg[green]%}%M %{$fg[white]%}in %{$fg[yellow]%}%~ %{$fg[white]%}[%*] %{$fg[blue]%}$(_virtualenv_prompt_info) $(_pyenv_prompt_info) $(_docker_prompt_info) $(_git_prompt_info) $(_hg_prompt_info)%{$fg[blue]%} % %{$reset_color%}
 ╰ ➤ '
 
 ZSH_THEME_HG_PROMPT_PREFIX="hg:‹%{$fg[red]%}"
